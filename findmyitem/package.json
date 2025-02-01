@@ -9,18 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.21.0",
-    "dotenv": "^16.4.7",
-    "next": "15.1.6",
-    "openai": "^4.82.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "recharts": "^2.15.1"
+    "next": "15.1.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/react": "^19.0.8",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
