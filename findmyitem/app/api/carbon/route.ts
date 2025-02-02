@@ -17,7 +17,9 @@ export async function GET(
       model: "gemini-1.5-flash",
       generationConfig: {"responseMimeType": "application/json"},
     });
-    
+  
+  const currentDate = new Date().toISOString().split('T')[0];
+
   const prompt = `get the carbon footprint of ${item} from farm to grocery store and give it using this JSON schema:
 
   CarbonFootPrint = {
@@ -26,7 +28,7 @@ export async function GET(
     "number_of_units": str,
     "carbon_footprint": number, 
     "unit_of_carbon" : str,
-    "date": str
+    "date": "${currentDate}"
   }
 
   Return: CarbonFootPrint`;
