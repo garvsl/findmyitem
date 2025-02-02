@@ -25,7 +25,8 @@ export async function GET(
     "unit_of_product": str,
     "number_of_units": str,
     "carbon_footprint": number, 
-    "unit_of_carbon" : str
+    "unit_of_carbon" : str,
+    "date": str
   }
 
   Return: CarbonFootPrint`;
