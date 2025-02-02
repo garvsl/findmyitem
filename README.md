@@ -9,9 +9,9 @@ We envisioned a shopping experience that is both accessible and eco-friendly—a
 ## Solution
 Meet Shopverse: an AR-guided mobile app that transforms the way you shop. With voice-assisted directions, Shopverse makes navigating grocery aisles simple and stress-free, even for the visually impaired. It displays each item's carbon footprint and suggests greener alternatives so you can shop with confidence and care. Shopverse is shopping reimagined for a sustainable, inclusive future. 
 
-## Technologies
-🚀 Next.js – Interactive dashboard
-📡 Express.js – Database & server management
-📱 Swift – iOS mobile app development
-🧠 ML & Keras (CNN, InceptionV3) – AI-powered vision classification & AR integration
-🎨 ShadCN – Sleek and Intuitive UI/UX
+## Technologies Used
+- 🚀 **Next.js** – Interactive dashboard  
+- 📡 **Express.js** – Database & server management  
+- 📱 **Swift** – iOS mobile app development  
+- 🧠 **ML & Keras (CNN, InceptionV3)** – AI-powered vision classification & AR integration  
+- 🎨 **ShadCN** – Sleek, accessible UI/UX  
