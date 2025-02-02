@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Label, PieChart, Pie, Cell, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { TableColumnsSplit, TrendingUp } from 'lucide-react';
+import database from "../api/carbon/route"
 
 const COLORS = [
     '#0088FE', '#00C49F', '#FFBB28', '#FF8042', // Original colors
@@ -15,14 +16,31 @@ const COLORS = [
   ];
   
 export default function CarbonFootPrint() {
-  const testData = []
+
   const [item, setItem] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState(database);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [cart, setCart] = useState("");
   const [highest, setHighest] = useState(0);
   const [highestName, setHighestName] = useState("");
+
+  useEffect(() => {
+    async function getDBdata() {
+      try {
+        const response = await fetch("http://localhost:3000/api/history");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        setResults(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    getDBdata();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
