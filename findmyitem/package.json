@@ -15,6 +15,7 @@
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.5",
+    "@shadcn/ui": "^0.0.4",
     "class-variance-authority": "^0.7.1",
     "dotenv": "^16.4.7",
     "lucide-react": "^0.474.0",
@@ -23,6 +24,7 @@
     "react-dom": "^19.0.0",
     "rechart": "^0.0.1",
     "recharts": "^2.15.1",
+    "shadcn": "^2.3.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
     "ts-node": "^10.9.2"
